@@ -1,0 +1,34 @@
+
+
+<div class="table-color">
+<table class="table">
+    <tr>
+      <th>QUESTIONS</th>
+      <th>YOUR ANSWERS</th>
+      <th>CORRECT ANSWER</th>
+      <th>RESULT</th>
+    </tr>
+  <% current_user.answers.all.each do |a|%>
+    <tr>
+      <td>
+      <%= Question.find(a.question_id).content %> 
+      </td>
+      <td>
+      <%= a.answer %>
+      </td>
+      <td>
+      <%= Question.find(a.question_id).correct_answer %>
+      </td>   
+      <% if  Question.find(a.question_id).correct_answer == a.answer %>
+      <td>-> CORRECT </td>
+      <%else%>
+      <td>->WRONG</td>
+      <% end %>
+    </tr>
+     
+  <% end %>
+</table>
+</div>
+
+
+

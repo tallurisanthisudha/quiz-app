@@ -1,0 +1,37 @@
+<div class="ques-form">
+<%= form_with model: @question do |form| %>
+    <div>
+      <%= form.label :content %><br>
+      <%= form.text_field :content %>
+    </div>
+  
+    <div>
+      <%= form.label :option_a %><br>
+      <%= form.text_field :option_a %>
+    </div>
+
+    <div>
+      <%= form.label :option_b %><br>
+      <%= form.text_field :option_b %>
+    </div>
+
+    <div>
+      <%= form.label :option_c %><br>
+      <%= form.text_field :option_c %>
+    </div>
+
+    <div>
+      <%= form.label :option_d %><br>
+      <%= form.text_field :option_d %>
+    </div>
+
+    <div>
+      <%= form.label :correct_answer %><br>
+      <%= form.text_field :correct_answer %>
+    </div>
+  
+    <div class="btn-submit">
+      <%= form.submit %>
+    </div>
+<% end %>
+</div>

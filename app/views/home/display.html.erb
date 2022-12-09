@@ -1,0 +1,19 @@
+<div class="quiz"
+<h2>Hello, <%= current_user.name %>
+   </h2>
+ <h3> Try to answer questions as many as you can. </h3>
+<%= button_to "Start quiz", questions_path,class:"css-button-sliding-to-left--blue", method: :get %>
+<div>
+
+<% if current_user.admin? %>
+<%= button_to "Add Questions", new_question_path,class:"btn btn-primary ", method: :get %>
+<%end%>
+
+
+<p class="lead">Quizer! is a game-based learning platform that brings engagement and fun to players every year at school, at work, and at home. Sign up for free!</p>
+
+<p>Please register or sign in to continue.</p>
+
+<%= link_to "Sign up", new_user_registration_path, class:  "btn btn-success" %>
+
+<%= link_to "Sign in", new_user_session_path, class:  "btn btn-secondary" %>

@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 20px;
+ }
+ .table-color{
+   background-color: antiquewhite;
+   background-size: cover;
+   height: 100vh;
+}
+
+ .login-form{
+    height:450px;
+    width: 450px;
+    background-color: rgb(143, 190, 212) ;
+    background-size: cover;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 29px;
+    color:rgb(68, 39, 18);
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+ }
+
+ .heading{
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .lead{
+   margin-top: 40px;
+   font-weight: bold;
+   color: rgb(23, 33, 131);
+ }
+
+ .lead1{
+   margin-left: 740px;
+   color: rgb(218, 46, 34);
+ }
+
+ .home-index{
+
+ }
+
+ .home-index1{
+   margin-left: 600px;
+   margin-top: 180px;
+ }
+
+ .start-button{
+   margin-left: 145px;
+   margin-top: 20px;
+ }
+
+ .home-back{
+   background-color: antiquewhite;
+   background-size: cover;
+   height: 100vh;
+ }
+
+ .questions-index{
+   background-color: aliceblue;
+   height: 200vh;
+   background-size: cover;
+
+ }
+
+ .ques-index1{
+   margin-top: 10px;
+   margin-left: 700px;
+   font-size: large;
+ }
+
+ .answers-index{
+   background-color: antiquewhite;
+   background-size: cover;
+   height: 100vh;
+ }
+
+ .ques-form{
+   
+   margin-top: 20px;
+   margin-left: 700px;
+ }
+
+ .btn-submit{
+   margin-top: 15px;
+   margin-left: 50px;
+ }
+
+ .ques-formback{
+   background-color: aliceblue;
+   height: 100vh;
+   background-size: cover;
+ }
+
+ .admin-button{
+   margin-left: 145px;
+   margin-top: 10px;
+ }
+
+ .result-button{
+   margin-top: 10px;
+
+ }
+
+ .heading{
+   margin-left: 10px;
+ }

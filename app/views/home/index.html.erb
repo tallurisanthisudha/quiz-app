@@ -1,0 +1,15 @@
+
+<div class="home-back">
+<h3 class="home-index">Hello, <%= current_user.name %></h3>
+<div class="home-index1">
+ <h4> Try to answer questions as many as you can. </h4>
+<div class="start-button">
+ <%= link_to "Start your quiz", questions_path,class:"btn btn-success", method: :get %>
+ </div>
+
+<div class="admin-button">
+<% if current_user.is_admin?%>
+<%= button_to "Add Questions", new_question_path,class:"btn btn-primary ", method: :get %>
+<%end%>
+</div>
+</div>
